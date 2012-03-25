@@ -5,6 +5,8 @@
 dir     = (ARGV[0]) ? ARGV[0] : Dir.pwd 
 regex   = (ARGV[1]) ? ARGV[1] : '.*'
 
+# if ARGV[1] is not actually a regular expression, we hit an exception.. we can't check regex.class, how can we test that it is castable?
+
 p "dir:   " + dir
 p "regex: " + regex
 
